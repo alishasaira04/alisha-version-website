@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alisha's Family - Personal Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* Sparkle background */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background-image: radial-gradient(white 1px, transparent 1px);
+      background-size: 5px 5px;
+      animation: sparkle 2s linear infinite;
+      opacity: 0.15;
+      z-index: 0;
+    }
+
+    @keyframes sparkle {
+      0% { background-position: 0 0; }
+      100% { background-position: 100% 100%; }
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('fearless4.jpeg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      background-color: #F0E68C;
+      color: #B8860B;
+      padding: 25px;
+      text-align: center;
+      font-family: 'Kaushan Script', cursive;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      background-color: #FFFFCC;
+      text-align: center;
+      padding: 12px;
+      opacity: 0.95;
+    }
+
+    nav a {
+      color: #8B8000;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #DAA520;
+    }
+
+    h1, p {
+      text-align: center;
+      color: khaki;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 204, 0.85);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-align: center;
+      backdrop-filter: blur(5px);
+    }
+
+    .card img {
+      border-radius: 10px;
+      width: 220px;
+      height: 300px;
+      object-fit: cover;
+      border: 4px solid #DAA520;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #F0E68C;
+      color: sienna;
+      font-size: 0.9rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      .card img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    ˋˏ ༻❁✿❀༺ ˎˊ ALISHA'S VERSION WEBSITE ༻❁✿❀༺ ˎˊ
+  </header>
+
+  <nav>
+    <a href="my personal website alisha.html">ABOUT ME</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="family.html">FAMILY</a>
+    <a href="experience.html">EXPERIENCE</a>
+    <a href="friends.html">FRIENDS</a>
+    <a href="gallery.html">GALLERY</a>
+    <a href="other information.html">OTHER INFO</a>
+  </nav>
+
+  <div class="container">
+    <h1>MY FAMILY</h1>
+    <p>ALISHA'S FAMILY</p>
+
+    <div class="card">
+      <p style="color:sienna;">This is my parents: Zulfikri bin Jusoh (61) and Emilia binti Ariffin (56).</p>
+      <img src="alisha14.jpg" alt="Parents">
+    </div>
+
+    <div class="card">
+      <p style="color:sienna;">My eldest sister Zatimanina (33), her husband Nazaruddin and daughter Naura Medina.</p>
+      <img src="alisha15.jpg" alt="Zatimanina and family">
+    </div>
+
+    <div class="card">
+      <p style="color:sienna;">My second sister: Siti Maisarah (30).</p>
+      <img src="alisha16.jpg" alt="Siti Maisarah">
+    </div>
+
+    <div class="card">
+      <p style="color:sienna;">My third sister: Nur Sabrina (28).</p>
+      <img src="alisha17.jpg" alt="Nur Sabrina">
+    </div>
+
+    <div class="card">
+      <p style="color:sienna;">My fourth sister: Nurin Mahirah (26).</p>
+      <img src="alisha18.jpeg" alt="Nurin Mahirah">
+    </div>
+
+    <div class="card">
+      <p style="color:sienna;">This is me, Alisha Saira (21) i am the youngest!</p>
+      <img src="alisha1.jpg" alt="Alisha">
+    </div>
+  </div>
+
+   <footer>
+   <p style="color:sienna;"> © 2025 Alisha's Website. All rights reserved.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alisha's Gallery</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('fearless4.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: khaki;
+    }
+
+    header {
+      background-color: rgba(240, 230, 140, 0.95);
+      color: #DAA520;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: rgba(255, 255, 153, 0.9);
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #BDB76B;
+      font-weight: bold;
+    }
+
+    .slideshow-container {
+      max-width: 600px;
+      position: relative;
+      margin: auto;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .mySlides img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .dot-container {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 5px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.3s;
+      cursor: pointer;
+    }
+
+    .active {
+      background-color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: rgba(240, 230, 140, 0.95);
+      color: sienna;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  ˋˏ ༻❁✿❀༺ ˎˊ-ALISHA'S VERSION WEBSITE-ˋˏ ༻❁✿❀༺ ˎˊ-
+</header>
+
+<nav>
+  <a href="my personal website alisha.html">ABOUT ME</a> 
+  <a href="education.html">EDUCATION</a> 
+  <a href="family.html">FAMILY</a> 
+  <a href="experience.html">EXPERIENCE</a> 
+  <a href="friends.html">FRIENDS</a> 
+  <a href="gallery.html">GALLERY</a>
+  <a href="other information.html">OTHER INFO</a> 
+</nav>
+
+<style>
+  body {
+    background-color: #1a1a1a;
+    font-family: "Segoe UI", sans-serif;
+    color: khaki;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, p {
+    color: khaki;
+  }
+
+  .slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  }
+
+  .mySlides {
+    display: none;
+    animation: fade 1.2s ease-in-out;
+  }
+
+  .mySlides img {
+    width: 100%;
+    border-radius: 16px;
+  }
+
+  @keyframes fade {
+    from {opacity: 0.4;}
+    to {opacity: 1;}
+  }
+
+  .dot-container {
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.4s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: khaki;
+  }
+
+  @media screen and (max-width: 768px) {
+    .slideshow-container {
+      max-width: 95%;
+    }
+  }
+</style>
+
+<section style="text-align:center;">
+  <h1>MY GALLERY⋆.°🦋༘⋆</h1>
+  <p>This is my gallery with my family & friends</p>
+</section>
+
+<div class="slideshow-container">
+  <div class="mySlides"><img src="alisha4.jpg" alt="Alisha 4"></div>
+  <div class="mySlides"><img src="alisha5.jpg" alt="Alisha 5"></div>
+  <div class="mySlides"><img src="alisha6.jpg" alt="Alisha 6"></div>
+  <div class="mySlides"><img src="alisha7.jpg" alt="Alisha 7"></div>
+  <div class="mySlides"><img src="alisha8.jpg" alt="Alisha 8"></div>
+  <div class="mySlides"><img src="alisha9.jpg" alt="Alisha 9"></div>
+  <div class="mySlides"><img src="alisha10.jpg" alt="Alisha 10"></div>
+  <div class="mySlides"><img src="alisha11.jpg" alt="Alisha 11"></div>
+  <div class="mySlides"><img src="alisha12.jpg" alt="Alisha 12"></div>
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+</div>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+    const dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].classList.remove("active");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].classList.add("active");
+  }
+
+  setInterval(() => {
+    slideIndex++;
+    if (slideIndex > 9) slideIndex = 1;
+    showSlides(slideIndex);
+  }, 4000);
+</script>
+
+
+</body>
+</html>

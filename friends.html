@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Friends - Alisha's Website</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-image: url('fearless4.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      overflow-x: hidden;
+      color: khaki;
+    }
+
+    /* Sparkle effect */
+    .sparkle {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      background-image: radial-gradient(white 1px, transparent 1px);
+      background-size: 4px 4px;
+      animation: sparkleAnim 2s infinite alternate;
+      opacity: 0.3;
+      z-index: 1;
+    }
+
+    @keyframes sparkleAnim {
+      0% { background-position: 0 0; opacity: 0.2; }
+      100% { background-position: 10px 10px; opacity: 0.4; }
+    }
+
+    header, nav, h1, p, .swiper, footer {
+      position: relative;
+      z-index: 2;
+    }
+
+    header {
+      background-color: #F0E68C; /* original color */
+      color: #DAA520;            /* original color */
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    nav {
+      background-color: #FFFF99;
+      text-align: center;
+      padding: 12px 0;
+      opacity: 0.9;
+    }
+
+    nav a {
+      color: #BDB76B;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      margin-top: 30px;
+      font-size: 32px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .swiper {
+      width: 90%;
+      max-width: 800px;
+      height: 450px;
+      margin: 40px auto;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .swiper-pagination-bullet {
+      background: white;
+      opacity: 0.5;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: gold;
+      opacity: 1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #F0E68C;
+      color: sienna;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 2;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sparkle"></div>
+
+  <header>
+    ˋˏ ༻❁✿❀༺ ˎˊ ALISHA'S VERSION WEBSITE ˋˏ ༻❁✿❀༺ ˎˊ
+  </header>
+
+  <nav>
+    <a href="my personal website alisha.html">ABOUT ME</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="family.html">FAMILY</a>
+    <a href="experience.html">EXPERIENCE</a>
+    <a href="friends.html">FRIENDS</a>
+    <a href="gallery.html">GALLERY</a>
+    <a href="other information.html">OTHER INFO</a>
+  </nav>
+
+  <h1>MY FRIENDS</h1>
+  <p>My Diploma Friends from UiTM Machang</p>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="alisha19.jpg" alt="Friend 1" /></div>
+      <div class="swiper-slide"><img src="alisha21.jpg" alt="Friend 2" /></div>
+      <div class="swiper-slide"><img src="alisha23.jpg" alt="Friend 3" /></div>
+      <div class="swiper-slide"><img src="alisha20.jpg" alt="Friend 4" /></div>
+      <div class="swiper-slide"><img src="alisha24.jpg" alt="Friend 5" /></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <footer>
+    © 2025 Alisha's Website. All rights reserved.
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      loop: true,
+      effect: 'fade',
+      fadeEffect: { crossFade: true },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>

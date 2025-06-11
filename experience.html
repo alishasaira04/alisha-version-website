@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alisha's Family - Personal Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* Sparkle background */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background-image: radial-gradient(white 1px, transparent 1px);
+      background-size: 5px 5px;
+      animation: sparkle 2s linear infinite;
+      opacity: 0.15;
+      z-index: 0;
+    }
+
+    @keyframes sparkle {
+      0% { background-position: 0 0; }
+      100% { background-position: 100% 100%; }
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('fearless4.jpeg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      background-color: #F0E68C;
+      color: #B8860B;
+      padding: 25px;
+      text-align: center;
+      font-family: 'Kaushan Script', cursive;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      background-color: #FFFFCC;
+      text-align: center;
+      padding: 12px;
+      opacity: 0.95;
+    }
+
+    nav a {
+      color: #8B8000;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #DAA520;
+    }
+
+    h1, p {
+      text-align: center;
+      color: khaki;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 204, 0.85);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-align: center;
+      backdrop-filter: blur(5px);
+    }
+
+    .card img {
+      border-radius: 10px;
+      width: 220px;
+      height: 300px;
+      object-fit: cover;
+      border: 4px solid #DAA520;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #F0E68C;
+      color: sienna;
+      font-size: 0.9rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      .card img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  ˋˏ ༻❁✿❀༺ ˎˊ ALISHA'S VERSION WEBSITE ༻❁✿❀༺ ˎˊ
+</header>
+
+<nav>
+  <a href="my personal website alisha.html">ABOUT ME</a>
+  <a href="education.html">EDUCATION</a>
+  <a href="family.html">FAMILY</a>
+  <a href="experience.html">EXPERIENCE</a>
+  <a href="friends.html">FRIENDS</a>
+  <a href="gallery.html">GALLERY</a>
+  <a href="other information.html">OTHER INFO</a>
+</nav>
+
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background: url('fearless4.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: khaki;
+    margin: 0;
+    padding: 0;
+  }
+
+  .timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+  }
+
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: khaki;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+  }
+
+  .timeline-entry {
+    padding: 20px 40px;
+    position: relative;
+    width: 50%;
+    opacity: 0;
+    transition: all 1s ease-out;
+  }
+
+  .timeline-entry.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .timeline-entry::after {
+    content: "★";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: khaki;
+    color: sienna;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    font-size: 18px;
+    top: 15px;
+  }
+
+  .timeline-entry.left {
+    left: 0;
+    transform: translateY(50px);
+  }
+
+  .timeline-entry.left::after {
+    right: -14px;
+  }
+
+  .timeline-entry.right {
+    left: 50%;
+    transform: translateY(50px);
+  }
+
+  .timeline-entry.right::after {
+    left: -14px;
+  }
+
+  .timeline-entry img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    margin-top: 15px;
+    transition: transform 0.4s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  }
+
+  .timeline-entry img:hover {
+    transform: scale(1.05);
+  }
+
+  .timeline-entry h3 {
+    margin-top: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .timeline::after {
+      left: 20px;
+    }
+
+    .timeline-entry {
+      width: 100%;
+      padding-left: 60px;
+      padding-right: 20px;
+    }
+
+    .timeline-entry.right {
+      left: 0%;
+    }
+
+    .timeline-entry::after {
+      left: 10px;
+    }
+  }
+</style>
+
+<div class="timeline">
+  <div class="timeline-entry left">
+    <h3>🏥Internship at HRPZ II</h3>
+    <p>In early 2025, I interned at <br> Hospital Raja Perempuan Zainab II<br>, working in the medical<br> record unit. I learned to handle records<br> and improved communication <br> & problem-solving skills.</p>
+    <img src="alisha3.jpg" alt="Internship at HRPZ II">
+  </div>
+
+  <div class="timeline-entry right">
+    <h3>📺 Didik TV Experience</h3>
+    <p>At age 17, I was selected for Didik TV by the Ministry of Education for Malay Literature. It was fun, and I learned a lot while presenting with a very kind host and my teacher.</p>
+    <img src="alisha13.PNG" alt="Didik TV Appearance">
+  </div>
+</div>
+
+<script>
+  // Scroll reveal effect
+  const entries = document.querySelectorAll('.timeline-entry');
+  const observer = new IntersectionObserver((entriesList) => {
+    entriesList.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.3 });
+
+  entries.forEach(entry => observer.observe(entry));
+</script>
+
+<footer>
+   <p style="color:sienna;"> © 2025 Alisha's Website. All rights reserved.
+  </footer>      
+
+
+
+
+</body>
+</html>

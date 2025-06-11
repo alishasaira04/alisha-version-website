@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alisha's Family - Personal Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* Sparkle background */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background-image: radial-gradient(white 1px, transparent 1px);
+      background-size: 5px 5px;
+      animation: sparkle 2s linear infinite;
+      opacity: 0.15;
+      z-index: 0;
+    }
+
+    @keyframes sparkle {
+      0% { background-position: 0 0; }
+      100% { background-position: 100% 100%; }
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('fearless4.jpeg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      background-color: #F0E68C;
+      color: #B8860B;
+      padding: 25px;
+      text-align: center;
+      font-family: 'Kaushan Script', cursive;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      background-color: #FFFFCC;
+      text-align: center;
+      padding: 12px;
+      opacity: 0.95;
+    }
+
+    nav a {
+      color: #8B8000;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #DAA520;
+    }
+
+    h1, p {
+      text-align: center;
+      color: khaki;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 204, 0.85);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-align: center;
+      backdrop-filter: blur(5px);
+    }
+
+    .card img {
+      border-radius: 10px;
+      width: 220px;
+      height: 300px;
+      object-fit: cover;
+      border: 4px solid #DAA520;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #F0E68C;
+      color: sienna;
+      font-size: 0.9rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      .card img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+ <header>
+  ˋˏ ༻❁✿❀༺ ˎˊ ALISHA'S VERSION WEBSITE ༻❁✿❀༺ ˎˊ
+</header>
+
+<nav>
+  <a href="my personal website alisha.html">ABOUT ME</a>
+  <a href="education.html">EDUCATION</a>
+  <a href="family.html">FAMILY</a>
+  <a href="experience.html">EXPERIENCE</a>
+  <a href="friends.html">FRIENDS</a>
+  <a href="gallery.html">GALLERY</a>
+  <a href="other information.html">OTHER INFO</a>
+</nav>
+
+<h1 style="color: khaki; text-align: center; margin-top: 40px;">MY EDUCATION BACKGROUND</h1>
+
+<style>
+  .education-container {
+    max-width: 1000px;
+    margin: 30px auto 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 0 10px;
+  }
+
+  .edu-card {
+    background: rgba(240, 230, 140, 0.85); /* Khaki with some transparency */
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+  }
+
+  .edu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  }
+
+  .edu-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 3px solid #DAA520;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .edu-desc {
+    padding: 15px 20px;
+    font-weight: 600;
+    color: #5a4d00;
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 650px) {
+    .edu-card {
+      width: 90%;
+    }
+  }
+</style>
+
+<div class="education-container">
+  <div class="edu-card">
+    <a target="_blank" href="alisha26.jpg" aria-label="Kindergarten photo">
+      <img src="alisha26.jpg" alt="Kindergarten" />
+    </a>
+    <div class="edu-desc">(2008-2010)4-6 years old was kindergarten at Q-dees Telipot, Kota Bharu</div>
+  </div>
+
+  <div class="edu-card">
+    <a target="_blank" href="alisha30.jpg" aria-label="Primary school photo">
+      <img src="alisha30.jpg" alt="Primary School" />
+    </a>
+    <div class="edu-desc">(2011-2013)7-9 years old was school at Sekolah Kebangsaan Padang Raja, Melor, Kota Bharu</div>
+  </div>
+
+  <div class="edu-card">
+    <a target="_blank" href="alisha28.jpg" aria-label="Transferred school photo">
+      <img src="alisha28.jpg" alt="Transferred School" />
+    </a>
+    <div class="edu-desc">(2014-2016)10-12 years old transferred to Sekolah Kebangsaan Gunung, Bachok</div>
+  </div>
+
+  <div class="edu-card">
+    <a target="_blank" href="alisha27.jpg" aria-label="High school photo">
+      <img src="alisha27.jpg" alt="Highschool" />
+    </a>
+    <div class="edu-desc">(2017-2022)13-17 years old was high school at SMK Sri Gunung, Bachok</div>
+  </div>
+
+  <div class="edu-card">
+    <a target="_blank" href="alisha29.jpg" aria-label="University diploma photo">
+      <img src="alisha29.jpg" alt="University Diploma" />
+    </a>
+    <div class="edu-desc">(2023-2025)19-21 years old enrolled Diploma in Information Management</div>
+  </div>
+</div>
+
+<footer>
+   <p style="color:sienna;"> © 2025 Alisha's Website. All rights reserved.
+  </footer>
+              
+
+
+
+
+</body>
+</html>
